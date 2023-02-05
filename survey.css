@@ -1,0 +1,48 @@
+body{
+    background-color: #282828;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.description{
+    font-style: italic;
+    color: black;
+    display: inline;
+}
+.surveyform{
+    margin: auto;
+    width: 80%;
+    background-color: #FF0000;
+    border-radius: 20px;
+    color: #282828;
+    padding: 1%;
+}
+a{
+    color: #00ff40;
+}
+h1{
+    text-align: center;
+    
+}
+label, input, select{
+    width: 90%;
+    font-family: consolas;
+    color: white;
+    display: block;
+    padding: 2px;
+}
+input, select{
+    min-height: 2rem;
+    border-radius: 4px;
+}
+select{
+    color: black;
+}
+.radio{
+    width: 20px;
+    display: inline;
+    width: auto;
+    font-size: medium;
+    min-height: 2%;
+}
+article{
+    margin-top: 5px;
+}

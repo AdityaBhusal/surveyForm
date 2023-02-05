@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="survey.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="syles.css" rel="stylesheet">
+    </head>
+    <body >
+        <form>
+       <div class="surveyform">
+        <h1 id="Title">
+            Survey Form
+        </h1>
+        <p class="description">This is a sample survey form I created for <a href="https://www.freecodecamp.org/learn" target="blank">this website</a></p>
+     <hr>
+     <section class="general" id="general">
+        <h2>
+            General Information
+        </h2>
+        <article><label for="name">Full Name</label><input type="text" id="name" required placeholder="Ex. Nawadit Sharma"></article>
+        <article><label for="Country">Country of Residence</label><input type="text" id="Country" required placeholder="Ex. China"></article>
+        <article><label for="age">Age (6<=age<=120)</label><input id="age" required type="number" min="6" max="120"></article>
+     <article><label for="email">Email Address</label><input id="email" type="email" required placeholder="ex: yourname@example.com" ></article>
+    </section> 
+    <hr>
+    <section class="web-related" id="web-related">
+        <h2>Web Related</h2>
+        <article><label for="role">Current Role</label>
+        <select id="role" name="role" >
+            <option value="" disabled selected>Select One Option</option>
+            <option value="1" >Student</option>
+            <option value="2" >Full Time Job</option>
+            <option value="3" >Full Time Learner</option>
+            <option value="4" >I don't prefer to say</option>
+            <option value="5" >Others</option>
+        </select>
+        </article>
+        <article>
+            <label for="opinion-internet" name="opinion">Do you think ChatGpt can take your job as a Programmer ?</label>
+            <input class="radio" id="definitely" type="radio" name="opinion" value="definitely"><label class="radio" for="definitely" >Definitely</label><br>
+            <input class="radio" id="maybe" type="radio" name="opinion" value="maybe"><label class="radio" for="maybe">Maybe</label><br>
+            <input class="radio" id="notsure" type="radio" name="opinion" value="notsure"><label class="radio" for="notsure">Not Sure</label>
+        </article>
+            <article>
+             <label for="speciality" name="speciality">Which skill from below are you good at? <p class="description">(check all that apply)</p> </label>
+             <input class="radio" id="front-end" type="checkbox" name="speciality" value="front-end"><label class="radio" for="front-end">Front End Web Development</label><br>
+                <input class="radio" id="back-end" type="checkbox" name="speciality" value="back-end"><label class="radio" for="back-end">Back End Web Development</label><br>
+             <input class="radio" id="data-visualisation" type="checkbox" name="speciality" value="data-visualisation"><label class="radio" for="data-visualisation">Data Visualisation</label><br>
+             <input class="radio" id="scientific-computing" type="checkbox" name="speciality" value="scientific-computing"><label class="radio" for="scientific-computing">Scientific Computing</label><br>
+             <input class="radio" id="cyber-security" type="checkbox" name="speciality" value="cyber-security"><label class="radio" for="cyber-security">Cyber Security</label><br>
+             <input class="radio" id="machine-learning" type="checkbox" name="speciality" value="machine-learning"><label class="radio" for="machine-learning">Machine Learning</label><br>
+             </article>
+        </section> 
+        <label for="">Say something about yourself: </label>
+        </div>
+    </form>
+</body>
+</html>
