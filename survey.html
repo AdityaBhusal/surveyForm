@@ -4,30 +4,29 @@
         <link rel="stylesheet" href="survey.css">
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link href="syles.css" rel="stylesheet">
     </head>
     <body >
-        <form>
+        <form id="survey-form">
        <div class="surveyform">
-        <h1 id="Title">
+        <h1 id="title">
             Survey Form
         </h1>
-        <p class="description">This is a sample survey form I created for <a href="https://www.freecodecamp.org/learn" target="blank">this website</a></p>
+        <p class="description" id="description">This is a sample survey form I created for <a href="https://www.freecodecamp.org/learn" target="blank">this website</a></p>
      <hr>
      <section class="general" id="general">
         <h2>
             General Information
         </h2>
-        <article><label for="name">Full Name</label><input type="text" id="name" required placeholder="Ex. Nawadit Sharma"></article>
-        <article><label for="Country">Country of Residence</label><input type="text" id="Country" required placeholder="Ex. China"></article>
-        <article><label for="age">Age (6<=age<=120)</label><input id="age" required type="number" min="6" max="120"></article>
-     <article><label for="email">Email Address</label><input id="email" type="email" required placeholder="ex: yourname@example.com" ></article>
+        <article><label for="name" id="name-label">Full Name</label><input type="text" id="name" required placeholder="Ex. Nawadit Sharma"></article>
+        <article><label for="Country" id="country-label" >Country of Residence</label><input type="text" id="Country" required placeholder="Ex. China"></article>
+        <article><label for="number" id="number-label">Age (6<=age<=120)</label><input id="number" required type="number" min="6" max="120" placeholder="for ex. 26"></article>
+     <article><label for="email" id="email-label">Email Address</label><input id="email" type="email" required placeholder="ex: yourname@example.com" ></article>
     </section> 
     <hr>
     <section class="web-related" id="web-related">
         <h2>Web Related</h2>
         <article><label for="role">Current Role</label>
-        <select id="role" name="role" >
+        <select id="dropdown" name="role" >
             <option value="" disabled selected>Select One Option</option>
             <option value="1" >Student</option>
             <option value="2" >Full Time Job</option>
@@ -55,7 +54,7 @@
        <article>
          <label for="bio">Say something about yourself: </label><textarea id="bio" rows="5" cols="100" placeholder="I just started practicing cs courses....."></textarea> 
          </article>
-       <button type="reset">RESET</button><button type="submit">SUBMIT</button>   
+       <button type="reset" id="reset">RESET</button><button type="submit" id="submit">SUBMIT</button>   
     </div>
         
     </form>
