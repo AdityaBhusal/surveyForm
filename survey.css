@@ -32,6 +32,7 @@ label, input, select{
 input, select{
     min-height: 2rem;
     border-radius: 4px;
+    color: black;
 }
 select{
     color: black;
@@ -45,4 +46,29 @@ select{
 }
 article{
     margin-top: 5px;
+}
+button{
+    background-color: #282828;
+    color: white;
+    width: 10%;
+    display: block;
+    border-radius: 4px;
+    margin:2px 30%;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold ;
+}
+button:hover {
+    background-color: #3d3d3d;
+    font-style: italic;
+    color: blanchedalmond;
+    font-size: larger;
+}
+a:hover{
+ font-size: larger;
+}
+.radio:hover{
+   font-style: italic;
+   color: black;
+   font-size: large;
 }
